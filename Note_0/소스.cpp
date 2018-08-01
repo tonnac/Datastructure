@@ -33,6 +33,7 @@ int CTest::num = 100;
 
 int main()
 {
+	int a;
 	sum(1024);
 
 	return 0;
