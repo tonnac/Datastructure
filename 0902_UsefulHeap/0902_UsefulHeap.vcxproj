@@ -145,11 +145,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="0901_SimpleHeap.h" />
+    <ClInclude Include="UsefulHeap.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="0901_SimpleHeap.c" />
     <ClCompile Include="UsefulHeap.c" />
+    <ClCompile Include="UsefulHeapMain.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

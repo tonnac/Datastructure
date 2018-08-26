@@ -1,13 +1,6 @@
 #include "DLinkedList.h"
 #include <stdlib.h>
 
-int WhoIsPrecede(LData d1, LData d2)
-{
-	if (d1 < d2)
-		return 0;
-	else
-		return 1;
-}
 void ListInit(List * plist)
 {
 	plist->head = (Node*)malloc(sizeof(Node));

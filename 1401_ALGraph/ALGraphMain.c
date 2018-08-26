@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include "1401_ALGraph.h"
+#include "ALGraph.h"
 
-int main()
+int main(void)
 {
 	ALGraph graph;
 	GraphInit(&graph, 5);

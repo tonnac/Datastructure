@@ -15,15 +15,27 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="UsefulHeapMain.c">
+    <ClCompile Include="Stack_01.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="UsefulHeap.c">
+    <ClCompile Include="DLinkedList.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ALGraphDFS.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DFSMain.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="UsefulHeap.h">
+    <ClInclude Include="Stack_01.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DLinkedList.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ALGraphDFS.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

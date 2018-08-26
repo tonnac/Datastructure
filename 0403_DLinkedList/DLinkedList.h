@@ -34,5 +34,4 @@ LData	LRemove		(List * plist);
 int		LCount		(List * plist);
 
 void	SetSortRule	(List * plist, comp c1);
-
 #endif

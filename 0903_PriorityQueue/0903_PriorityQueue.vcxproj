@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{28B0515A-42C8-4227-842E-C3A466A4DB61}</ProjectGuid>
+    <ProjectGuid>{EE2B780F-2A39-43C5-8341-C475732101B9}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My1401ALGraph</RootNamespace>
+    <RootNamespace>My0903PriorityQueue</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -145,13 +145,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\0403_DLinkedList\DLinkedList.h" />
-    <ClInclude Include="ALGraph.h" />
+    <ClInclude Include="PriorityQueue.h" />
+    <ClInclude Include="UsefulHeap.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\0403_DLinkedList\DLinkedList.c" />
-    <ClCompile Include="ALGraph.c" />
-    <ClCompile Include="ALGraphMain.c" />
+    <ClCompile Include="PriorityQueue.c" />
+    <ClCompile Include="PriorityQueueMain.c" />
+    <ClCompile Include="UsefulHeap.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

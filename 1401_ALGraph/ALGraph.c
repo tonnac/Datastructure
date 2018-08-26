@@ -1,25 +1,20 @@
-#include "1401_ALGraph.h"
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include "ALGraph.h"
+#include "DLinkedList.h"
 
-int WhoIsPrecede(int d1, int d2)
-{
-	if (d1 < d2)
-		return 0;    // d1이 정렬 순서상 앞선다.
-	else
-		return 1;    // d2가 정렬 순서상 앞서거나 같다.
-}
+int WhoIsPrecede(LData d1, LData d2);
 
 void GraphInit(ALGraph * pg, int nv)
 {
 	int i;
 
 	pg->adjList = (List*)malloc(sizeof(List)*nv);
-
+	
 	pg->numV = nv;
 	pg->numE = 0;
 
-	for (i = 0; i < nv; i++)
+	for (i = 0; i < nv; ++i)
 	{
 		ListInit(&(pg->adjList[i]));
 		SetSortRule(&(pg->adjList[i]), WhoIsPrecede);
@@ -44,11 +39,11 @@ void ShowGraphEdgeInfo(ALGraph * pg)
 	int i;
 	int vx;
 
-	for (i = 0; i < pg->numV; i++)
+	for (i = 0; i < pg->numV; ++i)
 	{
 		printf("%c와 연결된 정점: ", i + 65);
 
-		if (LFirst(&(pg->adjList[i]), &vx));
+		if (LFirst(&(pg->adjList[i]), &vx))
 		{
 			printf("%c ", vx + 65);
 
@@ -57,4 +52,12 @@ void ShowGraphEdgeInfo(ALGraph * pg)
 		}
 		printf("\n");
 	}
+}
+
+int WhoIsPrecede(LData d1, LData d2)
+{
+	if (d1 < d2)
+		return 0;
+	else
+		return 1;
 }

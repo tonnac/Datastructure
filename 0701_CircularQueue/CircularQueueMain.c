@@ -10,9 +10,11 @@ int main()
 	Enqueue(&q, 3);Enqueue(&q, 4);
 	Enqueue(&q, 5);Enqueue(&q, 6);
 
-	//while (!QIsEmpty(&q))
-	//	printf("%d ", Dequeue(&q));
-	QPrint(&q);
+	while (!QIsEmpty(&q))
+	{
+		printf("%d ", Dequeue(&q));
+	}
+//	QPrint(&q);
 
 	return 0;
 }

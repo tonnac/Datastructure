@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{28B0515A-42C8-4227-842E-C3A466A4DB61}</ProjectGuid>
+    <ProjectGuid>{969B9C0C-3DFA-462D-9545-42587F29B48B}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My1401ALGraph</RootNamespace>
+    <RootNamespace>My1404Kruskal</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -145,13 +145,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\0403_DLinkedList\DLinkedList.h" />
-    <ClInclude Include="ALGraph.h" />
+    <ClInclude Include="ALEdge.h" />
+    <ClInclude Include="ALGraphKruskal.h" />
+    <ClInclude Include="DLinkedList.h" />
+    <ClInclude Include="PriorityQueue.h" />
+    <ClInclude Include="Stack_01.h" />
+    <ClInclude Include="UsefulHeap.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\0403_DLinkedList\DLinkedList.c" />
-    <ClCompile Include="ALGraph.c" />
-    <ClCompile Include="ALGraphMain.c" />
+    <ClCompile Include="ALGraphKruskal.c" />
+    <ClCompile Include="DLinkedList.c" />
+    <ClCompile Include="KruskalMain.c" />
+    <ClCompile Include="PriorityQueue.c" />
+    <ClCompile Include="Stack_01.c" />
+    <ClCompile Include="UsefulHeap.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="UsefulHeapMain.c">
+    <ClCompile Include="PriorityQueue.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="PriorityQueueMain.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="UsefulHeap.c">
@@ -23,6 +26,9 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="PriorityQueue.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
     <ClInclude Include="UsefulHeap.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
